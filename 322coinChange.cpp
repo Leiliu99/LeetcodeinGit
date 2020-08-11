@@ -7,7 +7,7 @@ int coinChange(vector<int>& coins, int amount) {
                 if (coins[j] <= i) {
                     dp[i] = min(dp[i], dp[i - coins[j]] + 1);//every time for this position it's the minimun coin amount needed for this value
                     //eg.dp[1] = 1(only need one coin value 1); dp[2] = 1(only need one coin value 2) etc
-                    
+
                 }
             }
         }
