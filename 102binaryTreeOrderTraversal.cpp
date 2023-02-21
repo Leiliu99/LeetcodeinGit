@@ -19,7 +19,7 @@ public:
         nodeRecord.push(root);
         while(nodeRecord.size() > 0){
             vector<int> level;//a new vector for new level
-            int nodeLength = nodeRecord.size();
+            int nodeLength = nodeRecord.size();//how many elements in this level(1 or 2)
             for(int i = 0; i < nodeLength; i++){//push all the elements in this level
                 TreeNode* levelNode = nodeRecord.front();
                 nodeRecord.pop();
